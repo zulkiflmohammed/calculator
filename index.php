@@ -1,3 +1,9 @@
+<!-- index.php - home page for the calculator app, front end 
+    Written by: Zulkifl Mohammed
+    Written:    5/29/20
+    Revised:   
+    -->
+
 <!DOCTYPE html>
 <html lang="en">
 
