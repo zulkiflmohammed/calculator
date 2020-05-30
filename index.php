@@ -101,7 +101,8 @@
 
                     case '/':
                         // Check for second number to be 0, if so, exit
-                        if (secondOperand === 0) {
+                        if (secondOperand === 0) {                  
+                            $('#result').html(`<p></p>`);
                             alert("You can't divide by zero");
                             return;
                         }
