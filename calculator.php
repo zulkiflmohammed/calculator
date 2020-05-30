@@ -1,3 +1,8 @@
+<!-- calculator.php - handles backend logics for front-end requests 
+    Written by: Zulkifl Mohammed
+    Written:    5/29/20
+    Revised:   
+    -->
 <?php
 require_once('db-config.php');
 
@@ -37,7 +42,6 @@ if (isset($_POST['createCalculation'])) {
 // Gets all calculations from db
 function getAllCalculations($conn)
 {
-    // $sql = "SELECT * FROM calculator ORDER BY dateAdded DESC LIMIT 10";
     // execute stored procedure getAllCalculations
     $sql = "CALL getAllCalculations();";
     $result = $conn->query($sql);
@@ -49,7 +53,6 @@ function getAllCalculations($conn)
 
 function createCalculation($conn, $expression)
 {
-    // $sql = "INSERT INTO calculator (expression, dateAdded) VALUES('$expression', CURRENT_TIMESTAMP)";
     // execute stored procedure createCalculation
     $sql = "CALL createCalculation('$expression', CURRENT_TIMESTAMP);";
     $result = $conn->query($sql);
